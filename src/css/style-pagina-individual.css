@@ -922,13 +922,6 @@ div#user-review{
 		"user-review-scores-area-03"
 		"user-review-button-area";
 
-	border-width: medium;
-
-	border-style: solid;
-
-	border-color: black;
-
-
 }
 
 
@@ -1200,4 +1193,218 @@ div#liked-reviews{
 
 	grid-area: liked-reviews;
 
+}
+
+
+div#liked-reviews{
+
+	grid-area: liked-reviews;
+
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 7% 93%;
+
+	grid-template-areas:
+		"liked-reviews-title-area"
+		"liked-reviews-reviews-area";
+
+}
+
+
+div#liked-reviews-title-area{
+
+	grid-area: liked-reviews-title-area;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: white;
+
+	font-size: 1.3em;
+}
+
+div#liked-reviews-reviews-area{
+
+	grid-area: liked-reviews-reviews-area;
+
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 34% 33% 33%;
+
+	grid-template-areas:
+		"liked-review-area-01 liked-review-area-02"
+		"liked-review-area-03 liked-review-area-04"
+		"liked-review-area-05 liked-review-area-06";
+}
+
+div.liked-review-area-out{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+div.liked-review-area{
+
+	position: relative;
+
+	background-color: #778899;
+
+	height: 94%;
+	width: 95%;
+
+	border-width: medium;
+	border-style: solid;
+	border-color: black;
+	border-radius: 30px;
+
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 30% 70%;
+
+	grid-template-areas:
+		"liked-review-area-01"
+		"liked-review-area-02";
+
+}
+
+
+div.liked-review-area-01{
+
+	grid-area: liked-review-area-01;
+
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	grid-template-rows: 100%;
+
+	grid-template-areas:
+		"liked-review-image liked-review-info liked-reviews-like-icon";
+
+}
+
+
+div.liked-review-image{
+
+	grid-area: liked-review-image;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+div.liked-review-info{
+
+	grid-area: liked-review-info;
+
+	display: flex;
+	
+	align-items: center;
+
+	color: white;
+
+	font-size: 1.3em;
+
+	margin-top: 2%;
+}	
+
+
+div.liked-reviews-like-icon{
+
+	grid-area: liked-reviews-like-icon;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+i#thumb-icon{
+
+	color: #FFFF00;
+
+	position: relative;
+
+	font-size: 2.5em;
+}
+
+p.thumb-icon-number{
+
+	color: #FFFF00;
+
+	font-size: 1.2em;
+}
+
+
+div.liked-review-area-02{
+
+	grid-area: liked-review-area-02;
+
+	color: black;
+
+	font-size: 1.4em;
+}
+
+
+p.liked-review-text{
+
+	margin-left: 2%;
+	margin-top: 4%;
+
+}
+
+img.liked-review-img{
+
+	position: relative;
+
+	height: 100%;
+	width: 70%;
+
+	margin-top: 8%;
+
+	border-width: medium;
+	border-style: solid;
+	border-color: black;
+	border-radius: 30px;
+}
+
+
+
+div#liked-review-area-01{
+
+	grid-area: liked-review-area-01;
+
+}
+
+
+div#liked-review-area-02{
+
+	grid-area: liked-review-area-02;
+}
+
+
+div#liked-review-area-03{
+
+	grid-area: liked-review-area-03;
+}
+
+
+div#liked-review-area-04{
+
+	grid-area: liked-review-area-04;
+}
+
+
+div#liked-review-area-05{
+
+	grid-area: liked-review-area-05;
+}
+
+
+div#liked-review-area-06{
+
+	grid-area: liked-review-area-06;
 }
