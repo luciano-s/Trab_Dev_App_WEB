@@ -4,7 +4,7 @@
 <head>
     <title>Orphan Black</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/style-pagina-individual.css">
+    <link rel="stylesheet" type="text/css" href="css/resultado-busca.css">
 
     <script src="https://kit.fontawesome.com/a03e70c092.js" crossorigin="anonymous"></script>
 
@@ -36,100 +36,62 @@
 
         </div>
 
-        <div class="option-button">
+        <div class="option-button" onclick="sidebarHandler()">
 
-            <a href="" class="option-button-button">
+            <div class="option-button-button">
                 <i class="fas fa-list"></i>
-            </a>
+                <div class="sidebar">
+                    <div class="close">
+                        <button>Fechar &times</button>
+                    </div>
+                    <div class="user-info">
+
+                    </div>
+                    <div class="options-sidebar-1" id="1">
+                        <a href="login2.html">Login</a>
+
+                    </div>
+                    <div class="options-sidebar-2" id="2">
+                        <a href="login2.html">Sair</a>
+
+                    </div>
+                    <div class="options-sidebar-3" id="3">
+                        Categorias
+                    </div>
+                    <div class="options-sidebar-4" id="4">
+                        Minhas Avaliações
+                    </div>
+
+                </div>
+            </div>
+
 
         </div>
 
     </header>
 
+    <div class="content">
 
-
-    <div id="content">
-
-        <div id="content-area-1">
-
-            <div id="content-area-1-zone-1">
-
-                <div id="content-area-1-zone-1-image-zone">
-
-                    <img id="series-image" src="images/series_covers/orphan_black.jpg">
-
-                </div>
-
-                <div id="content-area-1-zone-1-review-zone">
-
-                    <a href=""><i class="far fa-star" id="star-icon-1"></i></a>
-                    <a href=""><i class="far fa-star" id="star-icon-2"></i></a>
-                    <a href=""><i class="far fa-star" id="star-icon-3"></i></a>
-                    <a href=""><i class="far fa-star" id="star-icon-4"></i></a>
-                    <a href=""><i class="far fa-star" id="star-icon-5"></i></a>
-                    <a href=""><i class="far fa-star" id="star-icon-6"></i></a>
-                    <a href=""><i class="far fa-star" id="star-icon-7"></i></a>
-                    <a href=""><i class="far fa-star" id="star-icon-8"></i></a>
-                    <a href=""><i class="far fa-star" id="star-icon-9"></i></a>
-                    <a href=""><i class="far fa-star" id="star-icon-10"></i></a>
-
-                </div>
-
+        <div class="results">
+            <div class="resultado">
+                <h2 style="text-align: center;color:white">Resultado de busca para :"Série boa pra caramba"</h2>
             </div>
-
-            <div id="content-area-1-zone-2">
-
-                <div id="content-area-1-zone-2-title-zone">
-
-                    <div id="content-area-1-zone-2-title-zone-title">
-
-                        <h1 id="series-title">Orphan Black</h1>
-
-                    </div>
-
-                    <div id="content-area-1-zone-2-title-zone-score">
-
-                        <a href=""><i class="far fa-star" id="star-icon-score"></i></a>
-
-                        <h1 id="series-score">9.5</h1>
-
-                    </div>
-
-                    <div id="content-area-1-zone-2-title-zone-ci">
-
-                        <img id="ci" src="images/classificacao_indicativa/18.png">
-
-                    </div>
-
-                </div>
-
-
-                <div id="content-area-1-zone-2-info-zone-2">
-
-                    <div id="series-date">
-                        <h2>
-                            20/01/2008 - 29/09/2013
-                        </h2>
-                    </div>
-
-                    <div id="icon-netflix-zone">
-                        <a href="https://www.netflix.com/title/70143836" target="self">
-                            <img id="icon-netflix" src="images/icons/netflix.png">
-                        </a>
-                    </div>
-
-                    <div id="icon-imdb-zone">
-                        <a href="https://www.imdb.com/title/tt0903747/?ref_=hm_fanfav_tt_3_pd_fp1" target="self">
-                            <img id="icon-imdb" src="images/icons/imdb.png">
-                        </a>
-                    </div>
-
-
-                </div>
+            <div class="result-1" id="1">
+                <img src="images/series_covers/breaking_bad.jpg">
+                <h3>Breaking Bad Avaliação 9.5</h3>
             </div>
-
+            <div class="result-2" id='2'>
+                <img src="images/series_covers/bojack_horseman.jpg">
+                <h3>Bojack Horseman Avaliação 9.5</h3>
+            </div>
+            <div class="result-3" id='3'>
+                <img src="images/series_covers/vikings.jpg">
+                <h3>Vikings Avaliação 9.5</h3>
+            </div>
         </div>
-    </div>
-</body>
 
+    </div>
+
+</body>
+<script src="script/sidebar.js"></script>
 </html>
