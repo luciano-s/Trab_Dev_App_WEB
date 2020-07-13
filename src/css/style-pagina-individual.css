@@ -13,7 +13,7 @@ body{
 
 	display: grid;
 	grid-template-columns: 100%;
-	grid-template-rows: 7% 93% 100% 100%;
+	grid-template-rows: 10% 93% 100% 100%;
 
 	grid-template-areas:
 		"head"
