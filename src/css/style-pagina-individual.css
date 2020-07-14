@@ -1,6 +1,7 @@
 *{
 	margin: 0;
-	padding: 0;
+    padding: 0;
+    font-family: "rockwell";
 }
 
 
@@ -27,6 +28,7 @@ body{
 header#header{
 
 	grid-area: head;
+    display: flex;
 
 	background-color: #282828;
 
@@ -61,34 +63,35 @@ img.logo:hover{
 
 
 a#header-item-01{
-
+    font-size: 1.1em;
 	grid-area: header-item-01;
 
 }
 
 
 a#header-item-02{
-	
+	font-size: 1.1em;
 	grid-area: header-item-02;
 
 }
 
 
 a#header-item-03{
-	
+	font-size: 1.1em;
 	grid-area: header-item-03;
 
 }
 
 
 a.header-items{
-
+    display: flex;
 	color: white;
 	text-decoration: none;
- 	font-size: 1.5em;
+ 	font-size: 1.1em;
  	text-align: center;
  	font-family: "rockwell";
-
+    align-items: center;
+    justify-content: center;
 
    	line-height: 280%;
 }
@@ -184,42 +187,132 @@ a.search-button:hover{
 }
 
 
-div.option-button{
-
-	grid-area: option-button;
-
-}
-
-a.option-button-button{
+.option-button-button{
 	top: 5%;
 	right: 15%;
-
 	position: relative;
-
 	color: #74BBFB;
 	background-color: black;
-
 	border-radius: 30px;
-
 	float: right;
-
 	height: 90%;
 	width: 80%;
-
 	display: flex;
-
 	justify-content: center;
 	align-items: center;
-
 	text-decoration: none;
+}
 
+.option-button-button:hover{
+	color: black;
+	background-color: #74BBFB;
+}
+
+.option-button-button > .sidebar{
+    position: absolute;
+    display: none;
+    background-color: black;
+    top:0;
+    right: 0;
+    width: 500px;
+    height: 500px;  
+    border: 1px solid white;
+    color: white;
+    transition: ease-in;
+    z-index: 1000;
 }
 
 
-a.option-button-button:hover{
+.sidebar > .user-info{
+    
+    /* width: 100%; */
+    /* height: 100%; */
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #282828;
+    font-size: 2em;
+    display: flex;
+}
+.sidebar > .user-info > a{
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
 
-	color: black;
-	background-color: #74BBFB;
+.options-sidebar-1{
+    display: flex;
+    font-size: 2em;
+    
+    border: 1px solid #282828;
+    
+}
+
+.options-sidebar-1 > a{
+    text-decoration: none;
+    color: white;
+    padding-left: 1em;
+    width: 100%;
+    height: 100%;
+}
+
+.options-sidebar-1:hover{
+    background-color: #282828;
+}
+
+.options-sidebar-2{
+    display: flex;
+    /* width: 100%;
+    height: 100%; */
+    font-size: 2em;
+    border: 1px solid #282828;
+    
+}
+
+.options-sidebar-2 > a{
+    text-decoration: none;
+    color: white;
+    padding-left: 1em;
+    width: 100%;
+    height: 100%;
+}
+
+.options-sidebar-2:hover{
+    background-color: #282828;
+}
+
+.options-sidebar-3{
+    display: none;
+    /* width: 100%;
+    height: 100%; */
+    /* font-size: 2em;
+    border: 1px solid #282828;
+    padding-left: 1em;
+     */
+}
+
+.options-sidebar-4{
+    display: none;
+}
+
+.options-sidebar-3:hover{
+    background-color: #282828;
+    cursor: pointer;
+}
+
+.close > button{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color:black;
+    font-size: 2em;
+}
+.close>button:hover{
+    background-color: #74BBFB;
+    cursor: pointer;
 }
 
 
@@ -1484,17 +1577,17 @@ header#header{
 
 	grid-gap: 0px 1%;
 
-	grid-template-columns: 6% 15% 15% 15% auto 5%;
+	grid-template-columns: 90% 10%;
 	grid-template-rows: 100%;
 	grid-template-areas:
-		"logo header-item-01 header-item-02 header-item-03 search-area option-button";
+		"search-area option-button";
 }
 
 
 img.logo{
 
 	grid-area: logo;
-
+    display: none;
 	height: 100%;
 	width: auto;
 }
@@ -1511,21 +1604,21 @@ img.logo:hover{
 
 
 a#header-item-01{
-
+    display: none;
 	grid-area: header-item-01;
 
 }
 
 
 a#header-item-02{
-	
+	display: none;
 	grid-area: header-item-02;
 
 }
 
 
 a#header-item-03{
-	
+	display: none;
 	grid-area: header-item-03;
 
 }
@@ -1632,44 +1725,144 @@ a.search-button:hover{
 	color: black;
 	background-color: #74BBFB;
 }
-
-
 div.option-button{
-
-	grid-area: option-button;
-
+    grid-area: option-button;
 }
 
-a.option-button-button{
-	top: 5%;
-	right: 15%;
+.option-button-button{
+    top: 5%;
+    right: 15%;
+    position: relative;
+    color: #74BBFB;
+    background-color: black;
+    border-radius: 30px;
+    float: right;
+    height: 90%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
 
-	position: relative;
+.option-button-button:hover{
+    color: black;
+    background-color: #AAAAAA;
+}
 
-	color: #74BBFB;
-	background-color: black;
-
-	border-radius: 30px;
-
-	float: right;
-
-	height: 90%;
-	width: 80%;
-
-	display: flex;
-
-	justify-content: center;
-	align-items: center;
-
-	text-decoration: none;
-
+.option-button-button > .sidebar{
+    position: absolute;
+    display: none;
+    background-color: black;
+    top:0;
+    right: 0;
+    width: 300px;
+    height: 500px;  
+    border: 1px solid white;
+    color: white;
+    transition: ease-in;
+    z-index: 1000;
 }
 
 
-a.option-button-button:hover{
+.sidebar > .user-info{
+    
+    /* width: 100%; */
+    /* height: 100%; */
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 2em;
+    display: flex;
+}
+.sidebar > .user-info > a{
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
 
-	color: black;
-	background-color: #74BBFB;
+.options-sidebar-1{
+    display: flex;
+    font-size: 2em;
+    
+    border: 1px solid #282828;
+    
+}
+
+.options-sidebar-1 > a{
+    text-decoration: none;
+    color: white;
+    padding-left: 1em;
+    width: 100%;
+    height: 100%;
+}
+
+.options-sidebar-1:hover{
+    background-color: #282828;
+}
+
+.options-sidebar-2{
+    display: flex;
+    /* width: 100%;
+    height: 100%; */
+    font-size: 2em;
+    border: 1px solid #282828;
+    
+}
+
+.options-sidebar-2 > a{
+    text-decoration: none;
+    color: white;
+    padding-left: 1em;
+    width: 100%;
+    height: 100%;
+}
+
+.options-sidebar-2:hover{
+    background-color: #282828;
+}
+
+.options-sidebar-3{
+    display: flex;
+    /* width: 100%;
+    height: 100%; */
+    font-size: 2em;
+    
+    padding-left: 1em;
+    
+}
+
+.options-sidebar-3:hover{
+    background-color: #282828;
+    cursor: pointer;
+}
+
+.options-sidebar-4{
+    display: flex;
+    /* width: 100%;
+    height: 100%; */
+    font-size: 2em;
+    border: 1px solid #282828;
+    padding-left: 1em;
+}
+.options-sidebar-4:hover{
+    background-color: #282828;
+}   
+
+.close > button{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color:black;
+    font-size: 2em;
+}
+.close>button:hover{
+    background-color: #74BBFB;
+    cursor: pointer;
 }
 
 
@@ -2075,12 +2268,8 @@ div#content-area-1-zone-2-sinop-zone{
 
 
 div#content2{
-
 	grid-area: cont2;
-
 	background-color: black;
-
-
 }
 
 

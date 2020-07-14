@@ -1,6 +1,7 @@
 *{
 	margin: 0;
-	padding: 0;
+    padding: 0;
+    font-family: "rockwell";
 }
 
 
@@ -52,7 +53,7 @@ img.logo:hover{
 
 	cursor: pointer;
 
-	background-color: #AAAAAA;
+	background-color: #74BBFB;
 
 	border-radius: 20px;
 }
@@ -85,7 +86,7 @@ a.header-items{
 
 
 a.header-items:hover{
-	background-color: #AAAAAA;
+	background-color: #74BBFB;
 	color: black;
 	border-radius: 20px;
 }
@@ -137,7 +138,7 @@ a.search-button{
 
 	position: relative;
 
-	color: #AAAAAA;
+	color: #74BBFB;
 	background-color: black;
 
 	border-radius: 30px;
@@ -172,7 +173,7 @@ div.option-button{
 	top: 5%;
 	right: 15%;
 	position: relative;
-	color: #AAAAAA;
+	color: #74BBFB;
 	background-color: black;
 	border-radius: 30px;
 	float: right;
@@ -186,7 +187,7 @@ div.option-button{
 
 .option-button-button:hover{
 	color: black;
-	background-color: #AAAAAA;
+	background-color: #74BBFB;
 }
 
 .option-button-button > .sidebar{
@@ -288,7 +289,7 @@ div.option-button{
     font-size: 2em;
 }
 .close>button:hover{
-    background-color: #282828;
+    background-color: #74BBFB;
     cursor: pointer;
 }
 
@@ -517,9 +518,9 @@ img.series-list-series-img:hover{
 
 
 
-@media (max-width: 600px){
+@media (max-width: 800px){
 
-	*{
+*{
 	margin: 0;
 	padding: 0;
 }
@@ -553,10 +554,10 @@ header#header{
 
 	grid-gap: 0px 1%;
 
-	grid-template-columns: 6% 15% 15% 15% auto 5%;
+	grid-template-columns: 90% 10%;
 	grid-template-rows: 100%;
 	grid-template-areas:
-		"logo header-item-01 header-item-02 header-item-03 search-area option-button";
+		"search-area option-button";
 }
 
 
@@ -573,23 +574,26 @@ img.logo:hover{
 
 	cursor: pointer;
 
-	background-color: #AAAAAA;
+	background-color: #74BBFB;
 
 	border-radius: 20px;
 }
 
 
 a#header-item-01{
+    display: none;
 	grid-area: header-item-01;
 }
 
 
 a#header-item-02{
+    display: none;
 	grid-area: header-item-02;
 }
 
 
 a#header-item-03{
+    display: none;
 	grid-area: header-item-03;
 }
 
@@ -606,7 +610,7 @@ a.header-items{
 
 
 a.header-items:hover{
-	background-color: #AAAAAA;
+	background-color: #74BBFB;
 	color: black;
 	border-radius: 20px;
 }
@@ -658,7 +662,7 @@ a.search-button{
 
 	position: relative;
 
-	color: #AAAAAA;
+	color: #74BBFB;
 	background-color: black;
 
 	border-radius: 30px;
@@ -685,29 +689,28 @@ a.search-button:hover{
 
 
 div.option-button{
-
-	grid-area: option-button;
-
+    grid-area: option-button;
 }
+
 .option-button-button{
-	top: 5%;
-	right: 15%;
-	position: relative;
-	color: #AAAAAA;
-	background-color: black;
-	border-radius: 30px;
-	float: right;
-	height: 90%;
-	width: 80%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
+    top: 5%;
+    right: 15%;
+    position: relative;
+    color: #74BBFB;
+    background-color: black;
+    border-radius: 30px;
+    float: right;
+    height: 90%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .option-button-button:hover{
-	color: black;
-	background-color: #AAAAAA;
+    color: black;
+    background-color: #74BBFB;
 }
 
 .option-button-button > .sidebar{
@@ -716,7 +719,7 @@ div.option-button{
     background-color: black;
     top:0;
     right: 0;
-    width: 500px;
+    width: 300px;
     height: 500px;  
     border: 1px solid white;
     color: white;
@@ -801,6 +804,18 @@ div.option-button{
     cursor: pointer;
 }
 
+.options-sidebar-4{
+    display: flex;
+    /* width: 100%;
+    height: 100%; */
+    font-size: 2em;
+    border: 1px solid #74BBFB;
+    padding-left: 1em;
+}
+.options-sidebar-4:hover{
+    background-color: #282828;
+}   
+
 .close > button{
     width: 100%;
     height: 100%;
@@ -809,7 +824,7 @@ div.option-button{
     font-size: 2em;
 }
 .close>button:hover{
-    background-color: #282828;
+    background-color: #74BBFB;
     cursor: pointer;
 }
 

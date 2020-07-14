@@ -1,7 +1,7 @@
 *{
 	margin: 0;
     padding: 0;
-    font-family: Swansea, Helvetica, sans-serif, Arial;
+    font-family: "rockwell";
 }
 
 body{
@@ -115,7 +115,7 @@ a.search-button{
 	top: 5%;
 	right: 2%;
 	position: relative;
-	color: #AAAAAA;
+	color: #74BBFB;
 	background-color: black;
 	border-radius: 30px;
 	float: right;
@@ -140,7 +140,7 @@ div.option-button{
 	top: 5%;
 	right: 15%;
 	position: relative;
-	color: #AAAAAA;
+	color: #74BBFB;
 	background-color: black;
 	border-radius: 30px;
 	float: right;

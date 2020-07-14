@@ -14,9 +14,9 @@
 		
 		<img class="logo" src="images/logo.png">
 
-		<a href="#" class="header-items" id="header-item-01">Minhas Avaliações</a>	
+		<a href="minhas-avaliacoes.html" class="header-items" id="header-item-01">Minhas Avaliações</a>	
 
-		<a href="#" class="header-items" id="header-item-02">Categorias</a>
+		<a href="categorias.html" class="header-items" id="header-item-02">Categorias</a>
 
 		<a href="#" class="header-items" id="header-item-03">Recomendação</a>
 
@@ -34,13 +34,34 @@
 
 		</div>
 
-		<div class="option-button">
-			
-			<a href="" class="option-button-button">
-				<i class="fas fa-list"></i>
-			</a>
+		<div class="option-button" onclick="sidebarHandler()">
+        
+            <div class="option-button-button">
+                <i class="fas fa-list"></i>
+                <div class="sidebar">
+                    <div class="close" >
+                        <button>Fechar &times</button>
+                    </div>
+                    <div class="user-info">
 
-		</div>
+                    </div>
+                    <div class="options-sidebar-1" id="1">
+                        <a href="login2.html">Login</a>
+                        
+                    </div>
+                    <div class="options-sidebar-2" id="2">
+                        <a href="login2.html">Sair</a>
+                        
+                    </div>
+                    <div class="options-sidebar-3" id="3">
+                        Categorias
+                    </div>    
+                    <div class="options-sidebar-4" id="4">
+                        Minhas Avaliações
+                    </div>
+                    
+                </div>
+            </div>
 
 	</header>
 
@@ -619,4 +640,5 @@
 	</div>
 
 </body>
+<script src="script/sidebar.js"></script>
 </html>
