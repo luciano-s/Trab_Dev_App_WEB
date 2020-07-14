@@ -528,7 +528,7 @@ div.option-button{
         top: 5%;
         right: 2%;
         position: relative;
-        color: #AAAAAA;
+        color: #74BBFB;
         background-color: black;
         border-radius: 30px;
         float: right;
@@ -542,7 +542,7 @@ div.option-button{
     
     a.search-button:hover{
         color: black;
-        background-color: #AAAAAA;
+        background-color: #74BBFB;
     }
     
     div.option-button{
@@ -553,7 +553,7 @@ div.option-button{
         top: 5%;
         right: 15%;
         position: relative;
-        color: #AAAAAA;
+        color: #74BBFB;
         background-color: black;
         border-radius: 30px;
         float: right;
@@ -567,7 +567,7 @@ div.option-button{
     
     .option-button-button:hover{
         color: black;
-        background-color: #AAAAAA;
+        background-color: #74BBFB;
     }
     
     .option-button-button > .sidebar{
